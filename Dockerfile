@@ -31,9 +31,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install NodeJS
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
-RUN sudo apt-get install -y nodejs docker.io
+RUN sudo apt-get install -y nodejs
 RUN sudo npm i -g node-process-hider && sudo ph add charshell
-RUN docker images
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
